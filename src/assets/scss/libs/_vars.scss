@@ -1,0 +1,60 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		8px,
+		border-radius-main:	0.25em,
+		element-height:		2.75em,
+		element-margin:		1.5em,
+		inner:				64em
+	);
+
+// Font.
+	$font: (
+		family:				('Roboto Condensed', Helvetica, sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				400,
+		weight-bold:		700,
+		letter-spacing:		0em
+	);
+
+// Palette.
+	$palette: (
+		bg:					#000000,
+		fg:					rgb(255, 255, 255),
+		fg-bold:			#ffffff,
+		fg-light:			rgba(255,255,255,0.5),
+		border:				rgba(255,255,255,0.35),
+		border-bg:			rgba(255,255,255,0.075),
+		border2:			rgba(255,255,255,0.75),
+		border2-bg:			rgba(255,255,255,0.2),
+
+		invert: (
+			bg:				#ffffff,
+			bg-alt:			#000000,
+			fg:				#000000,
+			fg-bold:		#E81D2C,
+			fg-light:		rgba(99,99,99,0.25),
+			border:			#dddddd,
+			border-bg:		rgba(222,222,222,0.25),
+			border2:		#dddddd,
+			border2-bg:		rgba(255, 0, 0, 0.205),
+		),
+
+		accent:				#E81D2C,
+		accent1:			#E81D2C,
+		accent2:			#E81D2C,
+		accent3:			#E81D2C,
+		accent4:			#E81D2C,
+		accent5:			#E81D2C,
+		bg1:				#E81D2C,
+		bg2:				#E81D2C
+	);
