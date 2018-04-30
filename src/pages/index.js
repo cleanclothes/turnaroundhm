@@ -10,9 +10,10 @@ import pic01 from '../assets/images/pic01.jpg'
 import turnaround from '../assets/images/turnaround.svg'
 import ahead from '../assets/images/ahead.svg'
 import turnright from '../assets/images/turnright.svg'
+import ccclogo from '../assets/images/ccc-logo-small.svg'
 
 import { Accordion, AccordionItem } from '../components/accordion';
-
+import TwitterTimeline from '../components/Twitterembed'
 
 
 class Index extends React.Component {
@@ -56,9 +57,9 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>HEY, H&amp;M, YOU SEEM TO BE QUITE LOST</h2>
+                  <h2>TURN AROUND, H&amp;M</h2>
                 </header>
-                <p>Did you forget your destination altogether? <br /></p>
+                <p>You seem to be quite lost. Or did you forget your destination altogether? <br /></p>
                 <p><b>You committed to reaching Living Wage for workers who make your clothes by 2018.</b></p>
                 <p>Remember that? You even drew up a roadmap, and you got loud cheers from all over the world.<br/>
 It looks like you threw the roadmap out the window and you now need some help to get to your original destination before 2018 is over. </p>
@@ -85,20 +86,26 @@ It looks like you threw the roadmap out the window and you now need some help to
                 <p>H&amp;M has the financial means and the power to stay true to their original commitment. Not only that – they could even go beyond that and cover their whole supply chain. </p>
                 <p>You have a voice in determining H&amp;M’s course of action! </p>
                 <h3>What you can do to turn H&amp;M around:</h3>
-                <p>Sign and share this petition:</p>
-                <p>Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</p>
+
+<p>Use your voice on social media! See the twitterfeed:</p>
+                <TwitterTimeline widgetId="990947999244267520" chrome="noborders noheader" height={300} />
+                <div dangerouslySetInnerHTML={{ __html: '<a href="https://twitter.com/intent/tweet?button_hashtag=turnaroundhm&ref_src=twsrc%5Etfw" className="twitter-hashtag-button" data-text="@HM #TurnAroundHM #LivingWageNow" data-lang="en" data-dnt="true" data-show-count="false">Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>' }} />
                 <p>You could also tweet one of these messages:</p>
-                <blockquote>I want workers behind @HM clothes to be paid a living wage – as #HM promised they would be by 2018! #TurnAroundHM #LivingWageNow</blockquote>
-                <blockquote>I want #LivingWageNow for workers in @HM supply chain! #TurnAroundHM - Stop turning your back on the living wage commitment!</blockquote>
-                <blockquote>Hey, @HM, you committed that workers who make your clothes will be paid a #LivingWage by 2018. Make it happen! #TurnAroundHM #LivingWageNow</blockquote>
+                <blockquote>I want workers behind @HM clothes to be paid a living wage – as #HM promised they would be by 2018! #TurnAroundHM #LivingWageNow </blockquote>
+                <blockquote>I want #LivingWageNow for workers in @HM supply chain! #TurnAroundHM - Stop turning your back on the living wage commitment! </blockquote>
+                <blockquote>Hey, @HM, you committed that workers who make your clothes will be paid a #LivingWage by 2018. Make it happen! #TurnAroundHM #LivingWageNow </blockquote>
                 <p>Make sure to check back and follow our social media for more ways to support this effort. </p>
                 <ul className="features">
                   <li><a href="https://www.facebook.com/cleanclothescampaign/" title="Facebook" target="_blank" className="icon  fa-facebook fa-2x alt">
                   </a><a href="https://www.facebook.com/cleanclothescampaign/" title="Facebook" target="_blank" ><h5>cleanclothescampaign</h5></a>
-                    
+
                   </li>
                   <li><a href="https://twitter.com/cleanclothes" title="Twitter" target="_blank" className="icon fa-twitter fa-2x alt"></a>
                   <a href="https://twitter.com/cleanclothes" title="Twitter" target="_blank"><h5>@cleanclothes</h5></a>
+
+                  </li>
+                  <li><a href="https://www.linkedin.com/company/clean-clothes-campaign/" title="LinkedIn" target="_blank" className="icon fa-linkedin fa-2x alt"></a>
+                    <a href="https://www.linkedin.com/company/clean-clothes-campaign/" title="LinkedIn" target="_blank"><h5>Clean Clothes Campaign</h5></a>
 
                   </li>
                   </ul>
@@ -147,7 +154,7 @@ It looks like you threw the roadmap out the window and you now need some help to
             <ul className="statistics">
               <li className="style1">
                 <span className="icon fa-cutlery"></span>
-                <strong>Food</strong> 
+                <strong>Food</strong>
               </li>
               <li className="style1">
                 <span className="icon fa-home"></span>
@@ -193,7 +200,10 @@ It looks like you threw the roadmap out the window and you now need some help to
               <AccordionItem title={`What is this website all about?`} >
                     <div>
                   <p>The website is the online home of the broader campaign aimed at making H&amp;M fulfill the commitment made in November 2013: to ensure that workers in their supply chain are paid a living wage by 2018.</p>
-                <p>The campaign was launched in May 2018. It is coordinated (and the website maintained) by Clean Clothes Campaign, the world’s largest network of labour unions and non-governmental organizations focused on improving working conditions and empowering workers in the garment and sportswear industries. <a href="https://www.laborrights.org" target="_blank">International Labor Rights Forum</a> and <a href="https://wemove.eu" target="_blank">wemove.eu</a> are also actively involved in the campaign.</p>
+                  <a href="https://cleanclothes.org" title="Clean Clothes Campaign" target="_blank"><img className="image right" src={ccclogo} alt="logo Clean Clothes Campaign" /></a>
+                  <p>The campaign was launched in May 2018. It is coordinated (and the website maintained) by <a href="https://cleanclothes.org" title="Clean Clothes Campaign" target="_blank">Clean Clothes Campaign</a>,
+                  the world’s largest network of labour unions and non-governmental organizations focused on improving working conditions and empowering workers in the garment and sportswear industries. </p>
+                  <p><a href="https://www.laborrights.org" target="_blank">International Labor Rights Forum</a> and <a href="https://wemove.eu" target="_blank">wemove.eu</a> are also actively involved in the campaign.</p>
                     </div>
                   </AccordionItem>
               <AccordionItem title={`Why is H&M the target of this campaign?`}>
@@ -210,18 +220,18 @@ It looks like you threw the roadmap out the window and you now need some help to
               <p>In fact, original documents published in 2013 have disappeared from H&amp;M’s corporate website! Why take them down if not because there is something in them that H&amp;M would like to hide? Thankfully, the groundbreaking commitment H&amp;M made in 2013 sparked so much interest that the original wording can still be found, despite H&amp;M’s concerted efforts to cover it up.</p>
                   <p>This is what H&amp;M committed to in 2013: "In a first step, our goal is that H&amp;M's strategic suppliers should have pay systems in place to <em><strong>pay a fair living wage by 2018</strong></em>. By then, this will affect 850,000 textile workers." (emphasis added). This is how the commitment sounds in the brand’s latest sustainability report: "Supplier factories representing 50% of product volume should be using the Fair Wage Method by 2018 and 90% of business partners should regard H&amp;M as a fair business partner by 2018."</p>
               <p>The same? Not even close!</p>
-              <p>Current wording would not lead to the kind of media coverage that H&amp;M received in 2013. &ldquo;H&amp;M promises to pay textile workers 'living wage' by 2018,&rdquo; <a href="http://articles.latimes.com/2013/nov/25/home/la-fi-mo-hm-textile-workers-living-wage-20131125" target="_blank">read the headline in Los Angeles Times</a>. &ldquo;A Swedish retailer promises a living wage,&rdquo; was the title of the <a href="https://www.nytimes.com/2013/12/02/opinion/a-swedish-retailer-promises-a-living-wage.html" target="_blank">editorial in New York Times</a>. &ldquo;H&amp;M has pledged to pay a living wage to 850,000 textile workers after expressing frustration over a lack of action by governments&hellip;,&rdquo; <a href="https://www.theguardian.com/business/2013/nov/25/h-m-living-wage-textile-workers-bangladesh-cambodia" target="_blank">wrote the Guardian</a>.</p>
+              <p>Current wording would not lead to the kind of media coverage that H&amp;M received in 2013. &ldquo;H&amp;M promises to pay textile workers 'living wage' by 2018,&rdquo; <a href="http://articles.latimes.com/2013/nov/25/home/la-fi-mo-hm-textile-workers-living-wage-20131125" target="_blank">read the headline in the Los Angeles Times</a>. &ldquo;A Swedish retailer promises a living wage,&rdquo; was the title of the <a href="https://www.nytimes.com/2013/12/02/opinion/a-swedish-retailer-promises-a-living-wage.html" target="_blank">editorial in the New York Times</a>. &ldquo;H&amp;M has pledged to pay a living wage to 850,000 textile workers after expressing frustration over a lack of action by governments&hellip;,&rdquo; <a href="https://www.theguardian.com/business/2013/nov/25/h-m-living-wage-textile-workers-bangladesh-cambodia" target="_blank">wrote the Guardian</a>.</p>
                   <p>At the time, H&amp;M did not rush out to correct these reports and say – as it does now – that the goal is actually to have &ldquo;supplier factories representing 50% of product volume &hellip; using the Fair Wage Method by 2018&rdquo;. Instead, H&amp;M cashed in on all the positive outcomes of the original commitment, and then turned its back on it and proceeded to methodically cover it up.</p> </div>
               </AccordionItem>
               <AccordionItem title={`What does H&M have to do to get on the right track?`}>
                 <div><p>Clearly, there are not many days left for H&amp;M to stay true to its original commitment: that workers would be paid living wages by 2018. This is not the first time that we are reminding H&amp;M of that fact.</p>
                   <p>As we pointed out in the open letter to H&amp;M’s Board of Directors, CEO and Head of Sustainability in March (following up on previous letters and statements), H&amp;M can still take the right steps to live up to its commitment, namely:</p>
-                  <ol>
+                  <ul>
                     <li>Publish a detailed road map on wage increases, with time-bound, measurable wage level increase targets and time-bound actions in the field of purchasing practices.</li>
                     <li>Invest in long term, sustainable relationships with factories.</li>
                     <li>Invest in measurable and transparent changes in real wages of workers in the H&amp;M supply chain.</li>
-                  </ol>
-                  <p>We have also been repeatedly calling for transparency, as this is another area where H&amp;M strayed off course it chartered in 2013 when it promised ###ORIGINAL QUOTE TO BE ADDED HERE###. Instead of getting ever more nontransparent, as it is currently the case, H&amp;M needs to publish the following:</p>
+                  </ul>
+                  <p>We have also been repeatedly calling for transparency, as this is another area where H&amp;M strayed off course it chartered in 2013. Instead of getting ever more nontransparent, as it is currently the case, H&amp;M needs to publish the following:</p>
                   <ul>
                     <li>Information on the living wage pilot projects carried out as part of H&amp;M’s commitment, including concrete factory information, wage level and development through time at each factory, and lessons learned.</li>
                     <li>Definition of a &ldquo;fair living wage&rdquo; as well as information on the proposed methodology to calculate a &ldquo;fair wage&rdquo; and to make sure that it is actually paid.</li>

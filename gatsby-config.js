@@ -3,7 +3,7 @@ module.exports = {
     title: "Turn Around H&M",
     author: "Clean Clothes Campaign",
     description: "Let's make sure H&M starts paying a living wage",
-    siteUrl: `https://turnaroundhm.org` 
+    siteUrl: `https://turnaroundhm.org`
   },
   pathPrefix: '/',
   plugins: [
@@ -35,7 +35,18 @@ module.exports = {
               maxWidth: 630,
             },
           },
+          {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+                width: 800,
+                ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+                // height: 400, // Optional: Overrides optional.ratio
+                related: false //Optional: Will remove related videos from the end of an embedded YouTube video.
+            },
+          },
           "gatsby-remark-copy-linked-files",
+          "gatsby-remark-responsive-iframe",
+          ""
         ],
       },
     },
