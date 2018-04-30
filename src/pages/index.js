@@ -87,7 +87,7 @@ It looks like you threw the roadmap out the window and you now need some help to
                 <p>You have a voice in determining H&amp;M’s course of action! </p>
                 <h3>What you can do to turn H&amp;M around:</h3>
 
-<p>Use your voice on social media! See the twitterfeed:</p>
+                <p>Use your voice on social media! See the twitterfeed:</p>
                 <TwitterTimeline widgetId="990947999244267520" chrome="noborders noheader" height={300} />
                 <div dangerouslySetInnerHTML={{ __html: '<a href="https://twitter.com/intent/tweet?button_hashtag=turnaroundhm&ref_src=twsrc%5Etfw" className="twitter-hashtag-button" data-text="@HM #TurnAroundHM #LivingWageNow" data-lang="en" data-dnt="true" data-show-count="false">Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>' }} />
                 <p>You could also tweet one of these messages:</p>
