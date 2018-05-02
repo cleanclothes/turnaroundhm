@@ -11,6 +11,7 @@ import turnaround from '../assets/images/turnaround.svg'
 import ahead from '../assets/images/ahead.svg'
 import turnright from '../assets/images/turnright.svg'
 import ccclogo from '../assets/images/ccc-logo-small.svg'
+import turnaroundhm from '../assets/images/turnaroundhm.png'
 
 import { Accordion, AccordionItem } from '../components/accordion';
 import TwitterTimeline from '../components/Twitterembed'
@@ -40,7 +41,23 @@ class Index extends React.Component {
 
     return (
       <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet title={siteTitle}>
+          {/* OpenGraph tags */}
+          <meta property="og:url" content="https://turnaroundhm.org" />
+          <meta property="og:title" content="Turn Around H&M" />
+          <meta property="og:description" content="Let's make sure H&M starts paying a living wage" />
+          <meta property="og:image" content="https://turnaroundhm.org/static/turnaroundhm.ace3460e.png" />
+          <meta property="og:type" content="website" />
+          <meta property="fb:app_id" content="463882227038771" />
+          {/* Twitter Card tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:creator" content="cleanclothes"
+          />
+          <meta name="twitter:title" content="Turn Around H&M" />
+          <meta name="twitter:description" content="Let's make sure H&M starts paying a living wage" />
+          <meta name="twitter:image" content="https://turnaroundhm.org/static/turnaroundhm.ace3460e.png" />
+        </Helmet>
 
         <Header />
 
@@ -89,13 +106,13 @@ It looks like you threw the roadmap out the window and you now need some help to
 
                 <p>Use your voice on social media! See the twitterfeed:</p>
                 <TwitterTimeline widgetId="990947999244267520" chrome="noborders noheader" height={300} />
-                <div dangerouslySetInnerHTML={{ __html: '<a href="https://twitter.com/intent/tweet?button_hashtag=turnaroundhm&ref_src=twsrc%5Etfw" className="twitter-hashtag-button" data-text="@HM #TurnAroundHM #LivingWageNow" data-lang="en" data-dnt="true" data-show-count="false">Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>' }} />
-                <p>You could also tweet one of these messages:</p>
+                <div dangerouslySetInnerHTML={{ __html: '<a href="https://twitter.com/intent/tweet?button_hashtag=turnaroundhm&ref_src=twsrc%5Etfw" className="twitter-hashtag-button" data-text="@HM #TurnAroundHM #LivingWageNow" data-lang="en" data-dnt="true" data-show-count="false"><b>Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</b></a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>' }} />
+                <p><br />You could also tweet one of these messages:</p>
                 <blockquote>I want workers behind @HM clothes to be paid a living wage – as #HM promised they would be by 2018! #TurnAroundHM #LivingWageNow </blockquote>
                 <blockquote>I want #LivingWageNow for workers in @HM supply chain! #TurnAroundHM - Stop turning your back on the living wage commitment! </blockquote>
-                <blockquote>Hey, @HM, you committed that workers who make your clothes will be paid a #LivingWage by 2018. Make it happen! #TurnAroundHM #LivingWageNow </blockquote>
-                <p>Make sure to check back and follow our social media for more ways to support this effort. </p>
-                <ul className="features">
+                <blockquote>Hey, @HM, you committed to making sure that workers are paid a #LivingWage by 2018. Make it happen! #TurnAroundHM #LivingWageNow </blockquote>
+                <p>Make sure to check back and follow our social media for more ways to support this effort, and/or <a href="http://eepurl.com/dsx8tP" title="Newsletter signup">sign up for our newsletter.</a> </p>
+                <ul className="icons">
                   <li><a href="https://www.facebook.com/cleanclothescampaign/" title="Facebook" target="_blank" className="icon  fa-facebook fa-2x alt">
                   </a><a href="https://www.facebook.com/cleanclothescampaign/" title="Facebook" target="_blank" ><h5>cleanclothescampaign</h5></a>
 
@@ -107,6 +124,9 @@ It looks like you threw the roadmap out the window and you now need some help to
                   <li><a href="https://www.linkedin.com/company/clean-clothes-campaign/" title="LinkedIn" target="_blank" className="icon fa-linkedin fa-2x alt"></a>
                     <a href="https://www.linkedin.com/company/clean-clothes-campaign/" title="LinkedIn" target="_blank"><h5>Clean Clothes Campaign</h5></a>
 
+                  </li>
+                  <li><a href="http://eepurl.com/dsx8tP" title="Newsletter signup" className="icon fa-bullhorn fa-2x alt"><span className="label">Newsletter signup</span></a>
+                    <a href="http://eepurl.com/dsx8tP" title="Newsletter signup" target="_blank"><h5>Newsletter signup</h5></a>
                   </li>
                   </ul>
               </div>
