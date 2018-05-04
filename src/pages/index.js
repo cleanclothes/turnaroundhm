@@ -12,6 +12,7 @@ import ahead from '../assets/images/ahead.svg'
 import turnright from '../assets/images/turnright.svg'
 import ccclogo from '../assets/images/ccc-logo-small.svg'
 import turnaroundhm from '../assets/images/turnaroundhm.png'
+import wemove from '../assets/images/wemove.png'
 
 import { Accordion, AccordionItem } from '../components/accordion';
 import TwitterTimeline from '../components/Twitterembed'
@@ -76,9 +77,9 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>TURN AROUND, H&amp;M</h2>
                 </header>
-                <p>You seem to be quite lost. Or did you forget your destination altogether? <br /></p>
+                <p>Hey H&amp;M, you seem to be quite lost. Or did you forget your destination altogether? <br /></p>
                 <p><b>You committed to reaching Living Wage for workers who make your clothes by 2018.</b></p>
-                <p>Remember that? You even drew up a roadmap, and you got loud cheers from all over the world.<br/>
+                <p>Remember that, H&amp;M? You even drew up a roadmap, and you got loud cheers from all over the world.<br/>
 It looks like you threw the roadmap out the window and you now need some help to get to your original destination before 2018 is over. </p>
 <p>Here’s a short version of what you need to do:</p>
                 <ul className="actions">
@@ -92,7 +93,7 @@ It looks like you threw the roadmap out the window and you now need some help to
           </section>
 
           <section id="turnhmaround" className="main">
-            <div className="spotlight">
+            <div className="main">
               <div className="content">
                 <header className="major">
                   <h2>TURN H&amp;M AROUND</h2>
@@ -103,14 +104,19 @@ It looks like you threw the roadmap out the window and you now need some help to
                 <p>H&amp;M has the financial means and the power to stay true to their original commitment. Not only that – they could even go beyond that and cover their whole supply chain. </p>
                 <p>You have a voice in determining H&amp;M’s course of action! </p>
                 <h3>What you can do to turn H&amp;M around:</h3>
+                <h4><a href="https://act.wemove.eu/campaigns/760" target="_blank">Sign the petition</a></h4>
+                <a href="https://act.wemove.eu/campaigns/760" target="_blank"><img className="image right" src={wemove} alt="logo wemove.eu" /></a>
+                <p>We've teamed up with <a href="https://act.wemove.eu/campaigns/760" target="_blank">wemove.eu</a> to let our voices be heard.</p>
+                <p>So please <a href="https://act.wemove.eu/campaigns/760" target="_blank">sign the petition</a> and let your friends know to do the same!</p>
 
-                <p>Use your voice on social media! See the twitterfeed:</p>
-                <TwitterTimeline widgetId="990947999244267520" chrome="noborders noheader" height={300} />
+                <h4>Use your voice on social media</h4> 
+                <p>See the twitterfeed:</p>
+                <TwitterTimeline widgetId="990947999244267520" chrome="noborders noheader" height={500} />
                 <div dangerouslySetInnerHTML={{ __html: '<a href="https://twitter.com/intent/tweet?button_hashtag=turnaroundhm&ref_src=twsrc%5Etfw" className="twitter-hashtag-button" data-text="@HM #TurnAroundHM #LivingWageNow" data-lang="en" data-dnt="true" data-show-count="false"><b>Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</b></a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>' }} />
                 <p><br />You could also tweet one of these messages:</p>
                 <blockquote>I want workers behind @HM clothes to be paid a living wage – as #HM promised they would be by 2018! #TurnAroundHM #LivingWageNow </blockquote>
-                <blockquote>I want #LivingWageNow for workers in @HM supply chain! #TurnAroundHM - Stop turning your back on the living wage commitment! </blockquote>
-                <blockquote>Hey, @HM, you committed to making sure that workers are paid a #LivingWage by 2018. Make it happen! #TurnAroundHM #LivingWageNow </blockquote>
+                <blockquote>I want #LivingWageNow for workers in @HM supply chain! #TurnAroundHM - Stop turning your back on the living wage commitment! #HM </blockquote>
+                <blockquote>Hey, @HM, you committed to making sure that workers are paid a #LivingWage by 2018. Make it happen, #HM! #TurnAroundHM #LivingWageNow </blockquote>
                 <p>Make sure to check back and follow our social media for more ways to support this effort, and/or <a href="http://eepurl.com/dsx8tP" title="Newsletter signup">sign up for our newsletter.</a> </p>
                 <ul className="icons">
                   <li><a href="https://www.facebook.com/cleanclothescampaign/" title="Facebook" target="_blank" className="icon  fa-facebook fa-2x alt">

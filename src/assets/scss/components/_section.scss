@@ -85,12 +85,6 @@
 		}
 	}
 
-	@mixin color-section($p: null) {
-		header {
-			&.major {
-				
-			}
-		}
-	}
+
 
 	@include color-section;
