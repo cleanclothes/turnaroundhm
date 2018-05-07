@@ -75,7 +75,7 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>TURN AROUND, H&amp;M</h2>
+                  <h2>TURN AROUND, H&amp;M !</h2>
                 </header>
                 <p>Hey H&amp;M, you seem to be quite lost. Or did you forget your destination altogether? <br /></p>
                 <p><b>You committed to reaching Living Wage for workers who make your clothes by 2018.</b></p>
@@ -96,20 +96,19 @@ It looks like you threw the roadmap out the window and you now need some help to
             <div className="main">
               <div className="content">
                 <header className="major">
-                  <h2>TURN H&amp;M AROUND</h2>
+                  <h2>WILL YOU HELP TURN H&amp;M AROUND ?</h2>
                 </header>
-                <h3>Will you help H&amp;M find a way to start paying a living wage?</h3>
                 <p>In 2013 H&amp;M committed to ensuring living wages by 2018, which brought the brand a lot of positive media coverage. Now H&amp;M is trying to cover up that commitment, pretending they have been saying something else all along.</p>
                 <p>Meanwhile hundreds of thousands of workers making H&amp;M clothing still cannot lift themselves out of poverty with the hard work hidden behind the glossy storefronts. </p>
                 <p>H&amp;M has the financial means and the power to stay true to their original commitment. Not only that – they could even go beyond that and cover their whole supply chain. </p>
                 <p>You have a voice in determining H&amp;M’s course of action! </p>
-                <h3>What you can do to turn H&amp;M around:</h3>
+                <h3>What you can do:</h3>
                 <h4><a href="https://act.wemove.eu/campaigns/760" target="_blank">Sign the petition</a></h4>
                 <a href="https://act.wemove.eu/campaigns/760" target="_blank"><img className="image right" src={wemove} alt="logo wemove.eu" /></a>
                 <p>We've teamed up with <a href="https://act.wemove.eu/campaigns/760" target="_blank">wemove.eu</a> to let our voices be heard.</p>
                 <p>So please <a href="https://act.wemove.eu/campaigns/760" target="_blank">sign the petition</a> and let your friends know to do the same!</p>
 
-                <h4>Use your voice on social media</h4> 
+                <h4>Use your voice on social media</h4>
                 <p>See the twitterfeed:</p>
                 <TwitterTimeline widgetId="990947999244267520" chrome="noborders noheader" height={500} />
                 <div dangerouslySetInnerHTML={{ __html: '<a href="https://twitter.com/intent/tweet?button_hashtag=turnaroundhm&ref_src=twsrc%5Etfw" className="twitter-hashtag-button" data-text="@HM #TurnAroundHM #LivingWageNow" data-lang="en" data-dnt="true" data-show-count="false"><b>Tweet your own message to H&amp;M (@HM), using #TurnAroundHM and #LivingWageNow</b></a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>' }} />
@@ -276,7 +275,7 @@ It looks like you threw the roadmap out the window and you now need some help to
                   <p>For instance, the Stitched up <a href="https://cleanclothes.org/livingwage/europe" target="_blank">report published by Clean Clothes Campaign in 2017</a> showed that there was a large gap between the legal minimum wages in Eastern/South-Eastern Europe and Turkey, and what a worker would actually need to provide for themselves and their family. </p></div>
               </AccordionItem>
               <AccordionItem title={`How can I / my organization join the campaign?`}>
-              <div><p>Please take a look at the &ldquo;Turn H&amp;M Around&rdquo; section above for concrete suggestions of what you can do. Signing and spreading the petition and using your social media channels to demand that H&amp;M ensures living wages in its supply chain would be a great start. We will be posting more suggestions as the campaign unfolds, so make sure to check back, and sign up for our updates. </p>
+                <div><p>Please take a look at the &ldquo;Turn H&amp;M Around&rdquo; section above for concrete suggestions of what you can do. Signing and spreading <a href="https://act.wemove.eu/campaigns/760" target="_blank">the petition</a> and using your social media channels to demand that H&amp;M ensures living wages in its supply chain would be a great start. We will be posting more suggestions as the campaign unfolds, so make sure to check back, and sign up for our updates. </p>
                 <p>If your organization would like to become a part of the campaign coalition, please get in touch with <a href="mailto:join@turnaroundhm.org">join@turnaroundhm.org</a></p></div>
               </AccordionItem>
             </Accordion>
