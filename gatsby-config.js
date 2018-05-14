@@ -11,6 +11,14 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`
     },
     {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '3',
+        matomoUrl: 'https://piwik.cleanclothes.org',
+        siteUrl: 'https://turnaroundhm.org'
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/posts`,
