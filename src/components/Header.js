@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.svg';
 
 const Header = (props) => (
     <header id="header" className="alt">
-        <span className="logo"><img src={logo} alt="" /></span>
+        <span className="logo"><a href="https://turnaroundhm.org"><img src={logo} alt="" /></a></span>
     </header>
 )
 
