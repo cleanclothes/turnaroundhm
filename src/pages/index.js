@@ -140,7 +140,7 @@ It looks like you threw the roadmap out the window and you now need some help to
 
           <section id="news" className="main ">
             <header className="major">
-              <h2>News</h2>
+              <h2>Latest News</h2>
             </header>
             <div className="content">
             {posts.map(({ node }) => {
@@ -163,6 +163,7 @@ It looks like you threw the roadmap out the window and you now need some help to
                 </div>
               )
             })}
+            <h3><a href="https://turnaroundhm.org/news/">See all news</a></h3>
             </div>
 
           </section>
@@ -297,7 +298,7 @@ export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(limit: 3, sort: {fields: [frontmatter___date], order: DESC}) {
       totalCount
       edges {
         node {
